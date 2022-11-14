@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //父类:
+        class Component{
+            constructor(props={},state={}){
+              this.props=props;
+              this.state=state;
+            }
+            componentWillMount(){//将要挂载
+                alert("componentWillMount");
+            }
+            render(){//挂载
+              alert("render")
+            }
+            componentDidMount(){
+                alert("componentDidMount");
+            }
+            shouldComponentUpder(nextProps,nextState){
+                //判断组件是否进入更新阶段的方法
+                return true;
+            }
+        }
+        //组件:都是Component类子类
+        class App extends Component{
+            constructor(props,state){
+                super();
+            }
+            render(){
+                alert("App组件的render");
+            }
+        }
+        let Com=new App();
+        console.log("Com",Com);
+    </script>
+</head>
+</html>
