@@ -25,10 +25,10 @@ export default class APP extends Component {
     {/* <AxiosPost请求Mockjs2/> */}
     {/* <Axios请求fastMock2/> */}
     {/* <Axios发送urlencoded/> */}
-     <Axios_all发送请求/>
+     {/* <Axios_all发送请求/> */}
      {/* <Axios请求拦截器/> */}
      {/* <Axios错误处理/> */}
-     {/* <Jsonp/> */}
+     <Jsonp/>
       </div>
     )
   }
